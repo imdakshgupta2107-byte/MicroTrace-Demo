@@ -1,0 +1,34 @@
+# Dependencies and generated builds
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+*.zip
+
+# Environment secrets (only the blank template is safe to commit)
+.env*
+!.env.example
+
+# Android generated / machine-specific / signing data
+android/.gradle/
+android/**/build/
+android/local.properties
+android/keystore.properties
+android/app/src/main/assets/public/
+*.jks
+*.keystore
+
+# Editors / OS / logs
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
+# Local mailbox/scheduler authorization, private Supabase state
+.secrets/
+supabase/.temp/
+web-demo/
+web-live/
+*.apk

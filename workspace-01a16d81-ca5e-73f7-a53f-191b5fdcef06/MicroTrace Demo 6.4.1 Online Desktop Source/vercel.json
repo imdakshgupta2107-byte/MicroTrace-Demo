@@ -1,0 +1,10 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/((?!assets/|brand/|downloads/|download.html|VERIFICATION-AND-LIMITS.md|icon-|sw.js|workbox-|manifest.webmanifest).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

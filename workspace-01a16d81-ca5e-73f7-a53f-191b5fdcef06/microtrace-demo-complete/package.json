@@ -1,0 +1,107 @@
+{
+  "name": "microtrace-demo",
+  "version": "6.4.1",
+  "private": true,
+  "description": "MicroTrace Demo — offline-first laboratory material verification and reconciliation",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "build:live": "cross-env VITE_APP_MODE=live vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "cap:sync": "npm run build && node scripts/prune-native-assets.mjs && cap sync android",
+    "android": "npm run cap:sync && cap open android",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "test:e2e:dev": "cross-env E2E_DEV=1 playwright test",
+    "verify": "npm run typecheck && npm run typecheck:tests && npm test && npm run build",
+    "android:debug": "npm run cap:sync && node scripts/build-android.mjs debug",
+    "android:release": "npm run cap:sync && node scripts/build-android.mjs release",
+    "package:source": "node scripts/package-source.mjs",
+    "typecheck:tests": "tsc --noEmit -p tsconfig.tests.json",
+    "dev:demo": "cross-env VITE_APP_MODE=demo vite",
+    "build:demo": "tsc --noEmit && cross-env VITE_APP_MODE=demo vite build --outDir web-demo",
+    "test:automation": "vitest run --config vitest.automation.config.ts",
+    "setup:gmail": "node scripts/setup-gmail.mjs",
+    "setup:scheduler": "node scripts/setup-scheduler.mjs",
+    "preview:demo": "vite preview --outDir web-demo",
+    "test:e2e:live": "playwright test --config playwright.live.config.ts",
+    "build:web": "npm run build && node scripts/prepare-web.mjs dist",
+    "desktop": "electron .",
+    "desktop:windows": "electron-builder --win nsis"
+  },
+  "dependencies": {
+    "@capacitor/app": "^6.0.2",
+    "@capacitor/core": "^6.1.2",
+    "@capacitor/filesystem": "^6.0.1",
+    "@capacitor/share": "^6.0.3",
+    "@supabase/supabase-js": "^2.45.4",
+    "@tanstack/react-query": "^5.59.0",
+    "clsx": "^2.1.1",
+    "decimal.js": "^10.6.0",
+    "html5-qrcode": "^2.3.8",
+    "lucide-react": "^0.447.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2",
+    "tailwind-merge": "^2.5.3"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/cli": "^6.1.2",
+    "@electric-sql/pglite": "^0.5.10",
+    "@playwright/test": "^1.56.1",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/node": "^22.7.5",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^5.2.0",
+    "autoprefixer": "^10.4.20",
+    "cross-env": "^7.0.3",
+    "electron": "^37.4.0",
+    "electron-builder": "^26.0.12",
+    "fflate": "^0.8.2",
+    "jsdom": "^25.0.1",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.6.3",
+    "vite": "^7.3.7",
+    "vite-plugin-pwa": "^2.0.0",
+    "vitest": "^4.1.11"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "main": "desktop/main.cjs",
+  "build": {
+    "appId": "com.microtrace.demo",
+    "productName": "MicroTrace Demo",
+    "asar": true,
+    "directories": {
+      "output": "release/windows"
+    },
+    "files": [
+      "desktop/**/*",
+      "package.json",
+      "!node_modules/**/*",
+      "!web-demo/**/*"
+    ],
+    "win": {
+      "icon": "desktop/icon.ico",
+      "target": [
+        "nsis"
+      ],
+      "artifactName": "MicroTrace-Demo-${version}-Setup.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  }
+}

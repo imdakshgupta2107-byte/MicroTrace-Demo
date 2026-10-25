@@ -1,0 +1,1326 @@
+{
+  "referenceDate": "2026-10-15",
+  "source": "Earlier MicroTrace data.js demo; passwords deliberately omitted.",
+  "users": [
+    {
+      "id": "u-principal",
+      "name": "Dr. Anjali Deshmukh",
+      "email": "principal@microtrace.edu",
+      "role": "principal",
+      "status": "active",
+      "joined": "2026-03-09"
+    },
+    {
+      "id": "u-staff",
+      "name": "Ms. Rupali Patil",
+      "email": "staff@microtrace.edu",
+      "role": "staff",
+      "status": "active",
+      "joined": "2026-03-29"
+    },
+    {
+      "id": "u-teacher",
+      "name": "Dr. Sameer Kulkarni",
+      "email": "teacher@microtrace.edu",
+      "role": "teacher",
+      "status": "active",
+      "joined": "2026-04-18"
+    },
+    {
+      "id": "u-student",
+      "name": "Aarav Sharma",
+      "email": "student@microtrace.edu",
+      "role": "student",
+      "status": "active",
+      "joined": "2026-08-16"
+    },
+    {
+      "id": "u-student2",
+      "name": "Sneha Iyer",
+      "email": "sneha@microtrace.edu",
+      "role": "student",
+      "status": "active",
+      "joined": "2026-08-18"
+    },
+    {
+      "id": "u-pend1",
+      "name": "Prof. Nikhil Jadhav",
+      "email": "jadhav@microtrace.edu",
+      "role": "teacher",
+      "status": "pending",
+      "joined": "2026-10-13"
+    },
+    {
+      "id": "u-pend2",
+      "name": "Ms. Priya More",
+      "email": "priya@microtrace.edu",
+      "role": "staff",
+      "status": "pending",
+      "joined": "2026-10-14"
+    }
+  ],
+  "items": [
+    {
+      "id": "it-01",
+      "name": "Ethanol 95%",
+      "category": "Chemicals",
+      "qty": 18,
+      "unit": "L",
+      "min": 5,
+      "loc": "Chem Store A · Shelf 1",
+      "exp": "2027-11-19",
+      "sup": "HiMedia",
+      "ret": false,
+      "barcode": "8906001000001",
+      "ghs": [
+        "GHS02",
+        "GHS07"
+      ],
+      "ppe": "Flame-proof area, no ignition sources",
+      "group": "flammable"
+    },
+    {
+      "id": "it-02",
+      "name": "Crystal violet stain",
+      "category": "Chemicals",
+      "qty": 500,
+      "unit": "mL",
+      "min": 100,
+      "loc": "Chem Store A · Shelf 2",
+      "exp": "2027-08-11",
+      "sup": "HiMedia",
+      "ret": false,
+      "barcode": "8906001000002",
+      "ghs": [
+        "GHS07"
+      ],
+      "ppe": "Gloves; stains skin heavily",
+      "group": "none"
+    },
+    {
+      "id": "it-03",
+      "name": "Gram's iodine",
+      "category": "Chemicals",
+      "qty": 450,
+      "unit": "mL",
+      "min": 100,
+      "loc": "Chem Store A · Shelf 2",
+      "exp": "2027-06-12",
+      "sup": "HiMedia",
+      "ret": false,
+      "barcode": "8906001000003",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-04",
+      "name": "Safranin 0.5%",
+      "category": "Chemicals",
+      "qty": 400,
+      "unit": "mL",
+      "min": 100,
+      "loc": "Chem Store A · Shelf 2",
+      "exp": "2027-09-30",
+      "sup": "Harrison's",
+      "ret": false,
+      "barcode": "8906001000004",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-05",
+      "name": "Methylene blue",
+      "category": "Chemicals",
+      "qty": 300,
+      "unit": "mL",
+      "min": 100,
+      "loc": "Chem Store A · Shelf 3",
+      "exp": "2027-04-13",
+      "sup": "HiMedia",
+      "ret": false,
+      "barcode": "8906001000005",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-06",
+      "name": "Hydrogen peroxide 3%",
+      "category": "Chemicals",
+      "qty": 900,
+      "unit": "mL",
+      "min": 200,
+      "loc": "Chem Store A · Shelf 1",
+      "exp": "2026-11-02",
+      "sup": "Thermo Fisher",
+      "ret": false,
+      "barcode": "8906001000006",
+      "ghs": [
+        "GHS03",
+        "GHS05",
+        "GHS07"
+      ],
+      "ppe": "Gloves + goggles; keep away from organics",
+      "group": "oxidizer"
+    },
+    {
+      "id": "it-07",
+      "name": "Phenol crystals",
+      "category": "Chemicals",
+      "qty": 450,
+      "unit": "g",
+      "min": 100,
+      "loc": "Chem Store A · Shelf 4",
+      "exp": "2028-02-27",
+      "sup": "SD Fine-Chem",
+      "ret": false,
+      "barcode": "8906001000007",
+      "ghs": [
+        "GHS05",
+        "GHS06"
+      ],
+      "ppe": "Nitrile gloves + face shield; burns are insidious",
+      "group": "toxic"
+    },
+    {
+      "id": "it-08",
+      "name": "Sodium chloride (NaCl)",
+      "category": "Chemicals",
+      "qty": 2500,
+      "unit": "g",
+      "min": 500,
+      "loc": "Chem Store A · Shelf 4",
+      "exp": "2028-09-14",
+      "sup": "SD Fine-Chem",
+      "ret": false,
+      "barcode": "8906001000008",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-09",
+      "name": "Glycerol",
+      "category": "Chemicals",
+      "qty": 1200,
+      "unit": "mL",
+      "min": 250,
+      "loc": "Chem Store A · Shelf 5",
+      "exp": "2028-06-06",
+      "sup": "HiMedia",
+      "ret": false,
+      "barcode": "8906001000009",
+      "ghs": [],
+      "ppe": "None beyond standard lab practice",
+      "group": "none"
+    },
+    {
+      "id": "it-10",
+      "name": "Nutrient agar (HiMedia)",
+      "category": "Culture Media",
+      "qty": 480,
+      "unit": "g",
+      "min": 100,
+      "loc": "Media Cupboard · M1",
+      "exp": "2026-11-29",
+      "sup": "HiMedia",
+      "ret": false,
+      "barcode": "8906001000010",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-11",
+      "name": "MacConkey agar",
+      "category": "Culture Media",
+      "qty": 60,
+      "unit": "g",
+      "min": 100,
+      "loc": "Media Cupboard · M2",
+      "exp": "2026-10-27",
+      "sup": "HiMedia",
+      "ret": false,
+      "barcode": "8906001000011",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-12",
+      "name": "Blood agar base",
+      "category": "Culture Media",
+      "qty": 220,
+      "unit": "g",
+      "min": 100,
+      "loc": "Media Cupboard · M3",
+      "exp": "2026-12-14",
+      "sup": "HiMedia",
+      "ret": false,
+      "barcode": "8906001000012",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-13",
+      "name": "Sabouraud dextrose agar",
+      "category": "Culture Media",
+      "qty": 160,
+      "unit": "g",
+      "min": 100,
+      "loc": "Media Cupboard · M4",
+      "exp": "2026-10-09",
+      "sup": "HiMedia",
+      "ret": false,
+      "barcode": "8906001000013",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-14",
+      "name": "Peptone water",
+      "category": "Culture Media",
+      "qty": 180,
+      "unit": "g",
+      "min": 100,
+      "loc": "Media Cupboard · M5",
+      "exp": "2026-12-29",
+      "sup": "HiMedia",
+      "ret": false,
+      "barcode": "8906001000014",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-15",
+      "name": "Nutrient broth",
+      "category": "Culture Media",
+      "qty": 300,
+      "unit": "g",
+      "min": 100,
+      "loc": "Media Cupboard · M6",
+      "exp": "2027-03-14",
+      "sup": "HiMedia",
+      "ret": false,
+      "barcode": "8906001000015",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-16",
+      "name": "Petri dishes 90 mm (borosil)",
+      "category": "Glassware",
+      "qty": 120,
+      "unit": "pcs",
+      "min": 30,
+      "loc": "Glassware Cab · G1",
+      "exp": null,
+      "sup": "Borosil",
+      "ret": true,
+      "barcode": "8906001000016",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-17",
+      "name": "Test tubes 18×150 mm",
+      "category": "Glassware",
+      "qty": 45,
+      "unit": "pcs",
+      "min": 50,
+      "loc": "Glassware Cab · G2",
+      "exp": null,
+      "sup": "Borosil",
+      "ret": true,
+      "barcode": "8906001000017",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-18",
+      "name": "Conical flasks 250 mL",
+      "category": "Glassware",
+      "qty": 60,
+      "unit": "pcs",
+      "min": 15,
+      "loc": "Glassware Cab · G3",
+      "exp": null,
+      "sup": "Borosil",
+      "ret": true,
+      "barcode": "8906001000018",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-19",
+      "name": "Measuring cylinder 100 mL",
+      "category": "Glassware",
+      "qty": 25,
+      "unit": "pcs",
+      "min": 10,
+      "loc": "Glassware Cab · G4",
+      "exp": null,
+      "sup": "Borosil",
+      "ret": true,
+      "barcode": "8906001000019",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-20",
+      "name": "Microscope slides (pkt of 72)",
+      "category": "Glassware",
+      "qty": 30,
+      "unit": "pkts",
+      "min": 10,
+      "loc": "Glassware Cab · G5",
+      "exp": null,
+      "sup": "Blue Star",
+      "ret": false,
+      "barcode": "8906001000020",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-21",
+      "name": "Cover slips 22 mm",
+      "category": "Glassware",
+      "qty": 25,
+      "unit": "pkts",
+      "min": 8,
+      "loc": "Glassware Cab · G5",
+      "exp": null,
+      "sup": "Blue Star",
+      "ret": false,
+      "barcode": "8906001000021",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-22",
+      "name": "Inoculating loops (nichrome)",
+      "category": "Glassware",
+      "qty": 24,
+      "unit": "pcs",
+      "min": 10,
+      "loc": "Glassware Cab · G6",
+      "exp": null,
+      "sup": "Local supplier",
+      "ret": true,
+      "barcode": "8906001000022",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-23",
+      "name": "Compound microscope (Olympus CX23)",
+      "category": "Instruments",
+      "qty": 8,
+      "unit": "units",
+      "min": 2,
+      "loc": "Instrument Room",
+      "exp": null,
+      "sup": "Olympus",
+      "ret": true,
+      "barcode": "8906001000023",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-24",
+      "name": "Autoclave, vertical 50 L",
+      "category": "Instruments",
+      "qty": 1,
+      "unit": "units",
+      "min": 0,
+      "loc": "Sterilisation Room",
+      "exp": null,
+      "sup": "Equitron",
+      "ret": true,
+      "barcode": "8906001000024",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-25",
+      "name": "Incubator 37 °C",
+      "category": "Instruments",
+      "qty": 2,
+      "unit": "units",
+      "min": 1,
+      "loc": "Instrument Room",
+      "exp": null,
+      "sup": "Remi",
+      "ret": true,
+      "barcode": "8906001000025",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-26",
+      "name": "Hot air oven",
+      "category": "Instruments",
+      "qty": 1,
+      "unit": "units",
+      "min": 0,
+      "loc": "Sterilisation Room",
+      "exp": null,
+      "sup": "Remi",
+      "ret": true,
+      "barcode": "8906001000026",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-27",
+      "name": "Micropipette set 10–1000 µL",
+      "category": "Instruments",
+      "qty": 6,
+      "unit": "sets",
+      "min": 2,
+      "loc": "Instrument Room",
+      "exp": null,
+      "sup": "Tarsons",
+      "ret": true,
+      "barcode": "8906001000027",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-28",
+      "name": "Colony counter",
+      "category": "Instruments",
+      "qty": 1,
+      "unit": "units",
+      "min": 0,
+      "loc": "Instrument Room",
+      "exp": null,
+      "sup": "Labline",
+      "ret": true,
+      "barcode": "8906001000028",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-29",
+      "name": "Nitrile gloves (M)",
+      "category": "Consumables",
+      "qty": 40,
+      "unit": "boxes",
+      "min": 10,
+      "loc": "Consumables Rack C1",
+      "exp": null,
+      "sup": "Surgipharm",
+      "ret": false,
+      "barcode": "8906001000029",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-30",
+      "name": "Face masks (3-ply)",
+      "category": "Consumables",
+      "qty": 25,
+      "unit": "boxes",
+      "min": 10,
+      "loc": "Consumables Rack C1",
+      "exp": null,
+      "sup": "Surgipharm",
+      "ret": false,
+      "barcode": "8906001000030",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-31",
+      "name": "Filter paper Whatman No.1",
+      "category": "Consumables",
+      "qty": 15,
+      "unit": "pkts",
+      "min": 5,
+      "loc": "Consumables Rack C2",
+      "exp": null,
+      "sup": "Whatman",
+      "ret": false,
+      "barcode": "8906001000031",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-32",
+      "name": "Non-absorbent cotton",
+      "category": "Consumables",
+      "qty": 12,
+      "unit": "rolls",
+      "min": 4,
+      "loc": "Consumables Rack C2",
+      "exp": null,
+      "sup": "Local supplier",
+      "ret": false,
+      "barcode": "8906001000032",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-33",
+      "name": "Parafilm",
+      "category": "Consumables",
+      "qty": 8,
+      "unit": "rolls",
+      "min": 2,
+      "loc": "Consumables Rack C3",
+      "exp": null,
+      "sup": "Tarsons",
+      "ret": false,
+      "barcode": "8906001000033",
+      "ghs": [],
+      "ppe": "",
+      "group": "none"
+    },
+    {
+      "id": "it-34",
+      "name": "E. coli ATCC 25922 (slant)",
+      "category": "Cultures",
+      "qty": 10,
+      "unit": "slants",
+      "min": 3,
+      "loc": "Culture Fridge · 4 °C",
+      "exp": "2026-11-09",
+      "sup": "NCMR-NCCS Pune",
+      "ret": false,
+      "barcode": "8906001000034",
+      "ghs": [
+        "GHS08"
+      ],
+      "ppe": "BSL-2 practices: gloves, lab coat, autoclave waste",
+      "group": "biohazard"
+    },
+    {
+      "id": "it-35",
+      "name": "Staphylococcus aureus (slant)",
+      "category": "Cultures",
+      "qty": 8,
+      "unit": "slants",
+      "min": 3,
+      "loc": "Culture Fridge · 4 °C",
+      "exp": "2026-10-24",
+      "sup": "NCMR-NCCS Pune",
+      "ret": false,
+      "barcode": "8906001000035",
+      "ghs": [
+        "GHS06",
+        "GHS08"
+      ],
+      "ppe": "BSL-2 practices; covers cuts; autoclave waste",
+      "group": "biohazard"
+    },
+    {
+      "id": "it-36",
+      "name": "Bacillus subtilis (slant)",
+      "category": "Cultures",
+      "qty": 6,
+      "unit": "slants",
+      "min": 2,
+      "loc": "Culture Fridge · 4 °C",
+      "exp": "2026-11-14",
+      "sup": "NCMR-NCCS Pune",
+      "ret": false,
+      "barcode": "8906001000036",
+      "ghs": [],
+      "ppe": "BSL-1: gloves recommended",
+      "group": "biohazard"
+    },
+    {
+      "id": "it-37",
+      "name": "Saccharomyces cerevisiae",
+      "category": "Cultures",
+      "qty": 5,
+      "unit": "slants",
+      "min": 2,
+      "loc": "Culture Fridge · 4 °C",
+      "exp": "2026-10-29",
+      "sup": "NCMR-NCCS Pune",
+      "ret": false,
+      "barcode": "8906001000037",
+      "ghs": [],
+      "ppe": "BSL-1: gloves recommended",
+      "group": "biohazard"
+    },
+    {
+      "id": "it-38",
+      "name": "Pseudomonas aeruginosa",
+      "category": "Cultures",
+      "qty": 4,
+      "unit": "slants",
+      "min": 2,
+      "loc": "Culture Fridge · 4 °C",
+      "exp": "2026-11-04",
+      "sup": "NCMR-NCCS Pune",
+      "ret": false,
+      "barcode": "8906001000038",
+      "ghs": [
+        "GHS06",
+        "GHS08"
+      ],
+      "ppe": "BSL-2; splash protection; autoclave within 24 h",
+      "group": "biohazard"
+    }
+  ],
+  "requests": [
+    {
+      "id": "rq-1",
+      "userId": "u-student",
+      "itemId": "it-16",
+      "qty": 10,
+      "purpose": "Practical: pour-plate technique (T.Y. B.Sc. batch B)",
+      "status": "issued",
+      "requestedOn": "2026-10-12",
+      "decidedBy": "u-staff",
+      "issueDate": "2026-10-12",
+      "returnDue": "2026-10-19",
+      "returnedOn": null
+    },
+    {
+      "id": "rq-2",
+      "userId": "u-student",
+      "itemId": "it-11",
+      "qty": 50,
+      "purpose": "Project: coliform detection in water samples",
+      "status": "pending",
+      "requestedOn": "2026-10-14",
+      "decidedBy": null,
+      "issueDate": null,
+      "returnDue": null,
+      "returnedOn": null
+    },
+    {
+      "id": "rq-3",
+      "userId": "u-teacher",
+      "itemId": "it-10",
+      "qty": 200,
+      "purpose": "Nutrient agar plates for S.Y. B.Sc. practicals",
+      "status": "issued",
+      "requestedOn": "2026-10-07",
+      "decidedBy": "u-staff",
+      "issueDate": "2026-10-07",
+      "returnDue": null,
+      "returnedOn": null
+    },
+    {
+      "id": "rq-4",
+      "userId": "u-student2",
+      "itemId": "it-19",
+      "qty": 2,
+      "purpose": "Media preparation — F.Y. B.Sc.",
+      "status": "returned",
+      "requestedOn": "2026-10-03",
+      "decidedBy": "u-staff",
+      "issueDate": "2026-10-03",
+      "returnDue": "2026-10-10",
+      "returnedOn": "2026-10-09"
+    },
+    {
+      "id": "rq-5",
+      "userId": "u-student2",
+      "itemId": "it-06",
+      "qty": 100,
+      "purpose": "Catalase test",
+      "status": "rejected",
+      "requestedOn": "2026-10-05",
+      "decidedBy": "u-staff",
+      "issueDate": null,
+      "returnDue": null,
+      "returnedOn": null,
+      "note": "Stock reserved for exams; collect from staff directly."
+    }
+  ],
+  "logs": [
+    {
+      "ts": "2026-10-03T09:12:00.000Z",
+      "who": "Ms. Rupali Patil",
+      "action": "Issued 2 pcs Measuring cylinder 100 mL to Sneha Iyer"
+    },
+    {
+      "ts": "2026-10-05T15:12:00.000Z",
+      "who": "Ms. Rupali Patil",
+      "action": "Rejected request: Hydrogen peroxide 3% (Sneha Iyer)"
+    },
+    {
+      "ts": "2026-10-07T11:12:00.000Z",
+      "who": "Ms. Rupali Patil",
+      "action": "Issued 200 g Nutrient agar to Dr. Sameer Kulkarni"
+    },
+    {
+      "ts": "2026-10-09T16:12:00.000Z",
+      "who": "Sneha Iyer",
+      "action": "Returned 2 pcs Measuring cylinder 100 mL"
+    },
+    {
+      "ts": "2026-10-12T10:12:00.000Z",
+      "who": "Ms. Rupali Patil",
+      "action": "Issued 10 pcs Petri dishes 90 mm to Aarav Sharma"
+    },
+    {
+      "ts": "2026-10-12T17:12:00.000Z",
+      "who": "Ms. Rupali Patil",
+      "action": "Added new item: Pseudomonas aeruginosa (4 slants)"
+    },
+    {
+      "ts": "2026-10-14T12:12:00.000Z",
+      "who": "Aarav Sharma",
+      "action": "Requested 50 g MacConkey agar"
+    },
+    {
+      "ts": "2026-10-14T18:12:00.000Z",
+      "who": "Prof. Nikhil Jadhav",
+      "action": "Signed up as Teacher — awaiting approval"
+    }
+  ],
+  "vendors": [
+    {
+      "id": "v-himedia",
+      "name": "HiMedia Laboratories",
+      "kind": "Manufacturer direct",
+      "contact": "sales@himedialabs.com · Mumbai"
+    },
+    {
+      "id": "v-sigma",
+      "name": "Sigma-Aldrich (Merck)",
+      "kind": "Imported / premium",
+      "contact": "in.orders@merckgroup.com · Mumbai"
+    },
+    {
+      "id": "v-srl",
+      "name": "SRL Chemicals",
+      "kind": "Budget brand",
+      "contact": "sales@srlchem.com · Mumbai"
+    },
+    {
+      "id": "v-nashik",
+      "name": "Nashik Scientific Traders",
+      "kind": "Local dealer",
+      "contact": "nashikscientific@gmail.com · M.G. Road, Nashik"
+    }
+  ],
+  "prices": [
+    {
+      "itemId": "it-01",
+      "vendorId": "v-himedia",
+      "pack": "2.5 L bottle",
+      "packSize": 2.5,
+      "price": 1450
+    },
+    {
+      "itemId": "it-01",
+      "vendorId": "v-srl",
+      "pack": "2.5 L bottle",
+      "packSize": 2.5,
+      "price": 1290
+    },
+    {
+      "itemId": "it-01",
+      "vendorId": "v-nashik",
+      "pack": "2.5 L bottle",
+      "packSize": 2.5,
+      "price": 1180
+    },
+    {
+      "itemId": "it-02",
+      "vendorId": "v-himedia",
+      "pack": "125 mL bottle",
+      "packSize": 125,
+      "price": 385
+    },
+    {
+      "itemId": "it-02",
+      "vendorId": "v-sigma",
+      "pack": "250 mL bottle",
+      "packSize": 250,
+      "price": 1150
+    },
+    {
+      "itemId": "it-02",
+      "vendorId": "v-srl",
+      "pack": "125 mL bottle",
+      "packSize": 125,
+      "price": 340
+    },
+    {
+      "itemId": "it-02",
+      "vendorId": "v-nashik",
+      "pack": "125 mL bottle",
+      "packSize": 125,
+      "price": 295
+    },
+    {
+      "itemId": "it-03",
+      "vendorId": "v-himedia",
+      "pack": "125 mL bottle",
+      "packSize": 125,
+      "price": 360
+    },
+    {
+      "itemId": "it-03",
+      "vendorId": "v-srl",
+      "pack": "125 mL bottle",
+      "packSize": 125,
+      "price": 315
+    },
+    {
+      "itemId": "it-03",
+      "vendorId": "v-nashik",
+      "pack": "125 mL bottle",
+      "packSize": 125,
+      "price": 280
+    },
+    {
+      "itemId": "it-04",
+      "vendorId": "v-himedia",
+      "pack": "125 mL bottle",
+      "packSize": 125,
+      "price": 330
+    },
+    {
+      "itemId": "it-04",
+      "vendorId": "v-srl",
+      "pack": "125 mL bottle",
+      "packSize": 125,
+      "price": 290
+    },
+    {
+      "itemId": "it-04",
+      "vendorId": "v-nashik",
+      "pack": "125 mL bottle",
+      "packSize": 125,
+      "price": 265
+    },
+    {
+      "itemId": "it-05",
+      "vendorId": "v-himedia",
+      "pack": "125 mL bottle",
+      "packSize": 125,
+      "price": 350
+    },
+    {
+      "itemId": "it-05",
+      "vendorId": "v-srl",
+      "pack": "125 mL bottle",
+      "packSize": 125,
+      "price": 305
+    },
+    {
+      "itemId": "it-06",
+      "vendorId": "v-himedia",
+      "pack": "500 mL bottle",
+      "packSize": 500,
+      "price": 410
+    },
+    {
+      "itemId": "it-06",
+      "vendorId": "v-nashik",
+      "pack": "500 mL bottle",
+      "packSize": 500,
+      "price": 340
+    },
+    {
+      "itemId": "it-06",
+      "vendorId": "v-srl",
+      "pack": "500 mL bottle",
+      "packSize": 500,
+      "price": 365
+    },
+    {
+      "itemId": "it-07",
+      "vendorId": "v-srl",
+      "pack": "500 g bottle",
+      "packSize": 500,
+      "price": 780
+    },
+    {
+      "itemId": "it-07",
+      "vendorId": "v-nashik",
+      "pack": "500 g bottle",
+      "packSize": 500,
+      "price": 690
+    },
+    {
+      "itemId": "it-08",
+      "vendorId": "v-himedia",
+      "pack": "500 g bottle",
+      "packSize": 500,
+      "price": 320
+    },
+    {
+      "itemId": "it-08",
+      "vendorId": "v-srl",
+      "pack": "500 g bottle",
+      "packSize": 500,
+      "price": 265
+    },
+    {
+      "itemId": "it-08",
+      "vendorId": "v-nashik",
+      "pack": "500 g bottle",
+      "packSize": 500,
+      "price": 240
+    },
+    {
+      "itemId": "it-09",
+      "vendorId": "v-himedia",
+      "pack": "500 mL bottle",
+      "packSize": 500,
+      "price": 520
+    },
+    {
+      "itemId": "it-09",
+      "vendorId": "v-srl",
+      "pack": "500 mL bottle",
+      "packSize": 500,
+      "price": 460
+    },
+    {
+      "itemId": "it-10",
+      "vendorId": "v-himedia",
+      "pack": "500 g pack",
+      "packSize": 500,
+      "price": 2450
+    },
+    {
+      "itemId": "it-10",
+      "vendorId": "v-sigma",
+      "pack": "500 g pack",
+      "packSize": 500,
+      "price": 4680
+    },
+    {
+      "itemId": "it-10",
+      "vendorId": "v-srl",
+      "pack": "500 g pack",
+      "packSize": 500,
+      "price": 2180
+    },
+    {
+      "itemId": "it-10",
+      "vendorId": "v-nashik",
+      "pack": "500 g pack",
+      "packSize": 500,
+      "price": 2090
+    },
+    {
+      "itemId": "it-11",
+      "vendorId": "v-himedia",
+      "pack": "500 g pack",
+      "packSize": 500,
+      "price": 2890
+    },
+    {
+      "itemId": "it-11",
+      "vendorId": "v-sigma",
+      "pack": "500 g pack",
+      "packSize": 500,
+      "price": 5350
+    },
+    {
+      "itemId": "it-11",
+      "vendorId": "v-srl",
+      "pack": "500 g pack",
+      "packSize": 500,
+      "price": 2540
+    },
+    {
+      "itemId": "it-11",
+      "vendorId": "v-nashik",
+      "pack": "500 g pack",
+      "packSize": 500,
+      "price": 2380
+    },
+    {
+      "itemId": "it-12",
+      "vendorId": "v-himedia",
+      "pack": "500 g pack",
+      "packSize": 500,
+      "price": 2150
+    },
+    {
+      "itemId": "it-12",
+      "vendorId": "v-srl",
+      "pack": "500 g pack",
+      "packSize": 500,
+      "price": 1890
+    },
+    {
+      "itemId": "it-13",
+      "vendorId": "v-himedia",
+      "pack": "500 g pack",
+      "packSize": 500,
+      "price": 2350
+    },
+    {
+      "itemId": "it-13",
+      "vendorId": "v-srl",
+      "pack": "500 g pack",
+      "packSize": 500,
+      "price": 2040
+    },
+    {
+      "itemId": "it-14",
+      "vendorId": "v-himedia",
+      "pack": "500 g pack",
+      "packSize": 500,
+      "price": 1980
+    },
+    {
+      "itemId": "it-14",
+      "vendorId": "v-srl",
+      "pack": "500 g pack",
+      "packSize": 500,
+      "price": 1690
+    },
+    {
+      "itemId": "it-14",
+      "vendorId": "v-nashik",
+      "pack": "500 g pack",
+      "packSize": 500,
+      "price": 1590
+    },
+    {
+      "itemId": "it-15",
+      "vendorId": "v-himedia",
+      "pack": "500 g pack",
+      "packSize": 500,
+      "price": 2140
+    },
+    {
+      "itemId": "it-15",
+      "vendorId": "v-srl",
+      "pack": "500 g pack",
+      "packSize": 500,
+      "price": 1850
+    },
+    {
+      "itemId": "it-16",
+      "vendorId": "v-nashik",
+      "pack": "72 pcs pack",
+      "packSize": 72,
+      "price": 890
+    },
+    {
+      "itemId": "it-16",
+      "vendorId": "v-srl",
+      "pack": "72 pcs pack",
+      "packSize": 72,
+      "price": 980
+    },
+    {
+      "itemId": "it-17",
+      "vendorId": "v-nashik",
+      "pack": "100 pcs pack",
+      "packSize": 100,
+      "price": 1450
+    },
+    {
+      "itemId": "it-17",
+      "vendorId": "v-srl",
+      "pack": "100 pcs pack",
+      "packSize": 100,
+      "price": 1680
+    },
+    {
+      "itemId": "it-17",
+      "vendorId": "v-himedia",
+      "pack": "100 pcs pack",
+      "packSize": 100,
+      "price": 1750
+    },
+    {
+      "itemId": "it-29",
+      "vendorId": "v-nashik",
+      "pack": "100 pcs box",
+      "packSize": 100,
+      "price": 420
+    },
+    {
+      "itemId": "it-29",
+      "vendorId": "v-srl",
+      "pack": "100 pcs box",
+      "packSize": 100,
+      "price": 460
+    },
+    {
+      "itemId": "it-30",
+      "vendorId": "v-nashik",
+      "pack": "50 pcs box",
+      "packSize": 50,
+      "price": 130
+    },
+    {
+      "itemId": "it-30",
+      "vendorId": "v-srl",
+      "pack": "50 pcs box",
+      "packSize": 50,
+      "price": 150
+    }
+  ],
+  "pos": [
+    {
+      "id": "po-1",
+      "itemId": "it-10",
+      "vendorId": "v-himedia",
+      "packs": 2,
+      "packSize": 500,
+      "unitPrice": 2450,
+      "total": 4900,
+      "status": "received",
+      "createdOn": "2026-03-24",
+      "createdBy": "u-staff",
+      "orderedOn": "2026-03-26",
+      "receivedOn": "2026-03-31"
+    },
+    {
+      "id": "po-2",
+      "itemId": "it-11",
+      "vendorId": "v-srl",
+      "packs": 1,
+      "packSize": 500,
+      "unitPrice": 2540,
+      "total": 2540,
+      "status": "received",
+      "createdOn": "2026-10-06",
+      "createdBy": "u-staff",
+      "orderedOn": "2026-10-06",
+      "receivedOn": "2026-10-07"
+    },
+    {
+      "id": "po-3",
+      "itemId": "it-17",
+      "vendorId": "v-nashik",
+      "packs": 1,
+      "packSize": 100,
+      "unitPrice": 1450,
+      "total": 1450,
+      "status": "ordered",
+      "createdOn": "2026-10-12",
+      "createdBy": "u-staff",
+      "orderedOn": "2026-10-13",
+      "receivedOn": null
+    }
+  ],
+  "practicals": [
+    {
+      "id": "pr-1",
+      "title": "Gram staining of mixed throat-swab culture",
+      "cls": "T.Y. B.Sc. · Batch B",
+      "date": "2026-10-20",
+      "createdBy": "u-teacher",
+      "createdOn": "2026-10-14",
+      "chems": [
+        {
+          "itemId": "it-02",
+          "qty": 5
+        },
+        {
+          "itemId": "it-03",
+          "qty": 5
+        },
+        {
+          "itemId": "it-01",
+          "qty": 10
+        },
+        {
+          "itemId": "it-04",
+          "qty": 5
+        },
+        {
+          "itemId": "it-20",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "id": "pr-2",
+      "title": "Coliform detection in drinking water (MPN on MacConkey)",
+      "cls": "S.Y. B.Sc.",
+      "date": "2026-10-24",
+      "createdBy": "u-teacher",
+      "createdOn": "2026-10-14",
+      "chems": [
+        {
+          "itemId": "it-11",
+          "qty": 250
+        },
+        {
+          "itemId": "it-16",
+          "qty": 20
+        },
+        {
+          "itemId": "it-17",
+          "qty": 30
+        }
+      ]
+    }
+  ],
+  "bookings": [
+    {
+      "id": "bk-1",
+      "itemId": "it-24",
+      "date": "2026-10-16",
+      "slot": "09:00–11:00",
+      "by": "u-teacher",
+      "purpose": "Media sterilisation for S.Y. practicals",
+      "status": "approved",
+      "createdOn": "2026-10-14",
+      "decidedBy": "u-staff",
+      "note": "Fill to ¾ — full load run."
+    },
+    {
+      "id": "bk-2",
+      "itemId": "it-25",
+      "date": "2026-10-15",
+      "slot": "11:00–13:00",
+      "by": "u-student",
+      "purpose": "Project plates incubation (coliform study)",
+      "status": "pending",
+      "createdOn": "2026-10-15",
+      "decidedBy": null,
+      "note": ""
+    }
+  ],
+  "breakages": [
+    {
+      "id": "br-1",
+      "itemId": "it-17",
+      "qty": 3,
+      "kind": "breakage",
+      "by": "u-student2",
+      "reason": "Tubes cracked during flame sterilisation — batch B practical",
+      "date": "2026-10-14",
+      "status": "reported",
+      "decidedBy": null,
+      "resolvedOn": null
+    }
+  ],
+  "createdAt": "2026-10-15T12:00:00.000Z"
+}

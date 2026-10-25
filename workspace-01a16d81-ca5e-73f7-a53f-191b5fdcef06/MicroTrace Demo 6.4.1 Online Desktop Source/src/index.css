@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+html { -webkit-text-size-adjust: 100%; }
+body { @apply bg-navy-50 text-ink font-sans antialiased; margin: 0; min-width: 280px; }
+* { box-sizing: border-box; }
+#root { min-height: 100vh; min-height: 100dvh; }
+.modal-panel { max-height: 88vh; max-height: 88dvh; }
+.app-viewport { min-height: 100vh; min-height: 100dvh; }
+img, video, canvas { max-width: 100%; }
+.safe-area-page {
+  padding-top: max(1rem, env(safe-area-inset-top, 0px));
+  padding-bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  padding-left: max(1rem, env(safe-area-inset-left, 0px));
+  padding-right: max(1rem, env(safe-area-inset-right, 0px));
+}
+.safe-area-header { height: calc(3.5rem + env(safe-area-inset-top, 0px)); padding-top: env(safe-area-inset-top, 0px); }
+.safe-area-sheet { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+.safe-app-content { padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px)); }
+.toast-position { bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px)); }
+@media (min-width: 768px) {
+  .safe-app-content { padding-bottom: 1.5rem; }
+  .toast-position { bottom: 1.25rem; }
+}
+@media (pointer: coarse) {
+  .touch-button { min-height: 44px; }
+  .touch-button.h-8.w-8 { min-width: 44px; }
+  input:not([type="checkbox"]):not([type="radio"]), select, textarea { font-size: 16px; }
+}
+:focus-visible { outline: 2px solid #d9a226; outline-offset: 2px; border-radius: 4px; }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: rgba(15, 33, 66, .18); border-radius: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes sheetIn { from { transform: translateX(16px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+@keyframes slideIn { from { transform: translateX(32px); opacity: .6; } to { transform: none; opacity: 1; } }
+@keyframes popIn { from { transform: scale(.96) translateY(6px); opacity: 0; } to { transform: scale(1) translateY(0); opacity: 1; } }
+@keyframes toastIn { from { transform: translateY(12px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+.animate-fadeIn { animation: fadeIn .18s ease-out both; }
+.animate-sheetIn { animation: sheetIn .22s ease-out both; }
+.animate-popIn { animation: popIn .18s ease-out both; }
+.animate-toastIn { animation: toastIn .2s ease-out both; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+
+/* The provided navy/gold identity, with no external fonts or image services. */
+.onboarding-background {
+  background: radial-gradient(ellipse at 15% 15%, rgba(217,162,38,.12), transparent 45%),
+    radial-gradient(ellipse at 90% 90%, rgba(46,78,130,.45), transparent 55%), #081226;
+}
+fieldset { min-inline-size: 0; }

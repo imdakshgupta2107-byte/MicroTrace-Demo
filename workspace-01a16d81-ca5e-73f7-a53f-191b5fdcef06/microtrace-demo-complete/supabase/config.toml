@@ -1,0 +1,7 @@
+project_id = "microtrace-automation"
+
+[functions.automation-admin]
+verify_jwt = false
+
+[functions.automation-run]
+verify_jwt = false
